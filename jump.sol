@@ -6,13 +6,10 @@
 pragma solidity ^0.8.0;
 
 contract PlayerJump {
-    // Hauteur actuelle du saut du joueur
     uint public jumpHeight;
 
-    // Événement pour signaler un saut
     event PlayerJumped(uint height);
 
-    // Constructeur pour initialiser la hauteur de saut
     constructor() {
         jumpHeight = 0;
     }
