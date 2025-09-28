@@ -14,7 +14,6 @@ contract PlayerJump {
         jumpHeight = 0;
     }
 
-    // Fonction pour effectuer un saut avec une hauteur aléatoire
     function jump() public {
         uint randomHeight = uint(keccak256(abi.encodePacked(block.timestamp, block.prevrandao))) % 101; // Hauteur entre 0 et 100
         jumpHeight = randomHeight;
